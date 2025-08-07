@@ -57,7 +57,7 @@ class _CounterAppState extends State<CounterApp> {
             children: [
               const Text(
                 'Anda telah menekan tombol sebanyak:',
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 20),
               ),
               Text(
                 '$_counter', // Menampilkan state _counter
