@@ -25,9 +25,9 @@ class _HomePageContentState extends State<HomePageContent> {
     ),
     Product(
       id: 'p2',
-      name: 'Jam Tangan Klasik Pria',
+      name: 'Smartwatch MI',
       description:
-          'Jam tangan analog dengan desain klasik yang elegan. Tahan air hingga 50m dan strap terbuat dari kulit asli.',
+          'Smartwatch dengan desain yang modern. Tahan air hingga 50m dan strap terbuat dari plastik.',
       price: 1250000,
       imageUrl: 'assets/images/Smartwatch.jpeg',
     ),
