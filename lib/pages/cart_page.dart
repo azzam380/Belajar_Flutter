@@ -10,7 +10,7 @@ class CartPage extends StatelessWidget {
     return Consumer<CartProvider>(
       builder: (context, cart, child) {
         return Scaffold(
-          appBar: AppBar(title: const Text('Keranjang Saya'), backgroundColor: Colors.deepPurple, elevation: 1),
+          appBar: AppBar(title: const Text('Keranjang Saya'), backgroundColor: Colors.deepPurple, foregroundColor: Colors.white ,elevation: 1),
           body: cart.items.isEmpty
               ? const Center(child: Text('Keranjang Anda masih kosong.', style: TextStyle(fontSize: 18, color: Colors.grey)))
               : ListView.builder(

@@ -6,7 +6,7 @@ class ChatListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Pesan'), backgroundColor: Colors.deepPurple, elevation: 1),
+      appBar: AppBar(title: const Text('Pesan'), backgroundColor: Colors.deepPurple, foregroundColor: Colors.white ,elevation: 1),
       body: ListView(
         children: [
           ListTile(
