@@ -25,6 +25,30 @@ class _HomePageContentState extends State<HomePageContent> {
     ),
     Product(
       id: 'p2',
+      name: 'Helm KYT',
+      description:
+          'KYT adalah merek helm asal Indonesia yang sangat populer dan sudah mendunia. Kualitasnya diakui secara internasional dan bahkan digunakan oleh pembalap di ajang balap bergengsi seperti MotoGP..',
+      price: 1250000,
+      imageUrl: 'assets/images/helm-kyt.jpeg',
+    ),
+    Product(
+      id: 'p2',
+      name: 'Samsung Galaxy A55',
+      description:
+          'Samsung Galaxy A55 adalah ponsel kelas menengah (mid-range) yang menjadi andalan Samsung. Ponsel ini dirancang sebagai "adik" dari seri flagship Galaxy S dengan harga yang lebih terjangkau.',
+      price: 1250000,
+      imageUrl: 'assets/images/samsung-a55.jpeg',
+    ),
+    Product(
+      id: 'p2',
+      name: 'Xiaomi 14T MI',
+      description:
+          'Xiaomi 14T adalah ponsel kelas flagship-killer atau sub-flagship. Seri "T" dari Xiaomi dikenal karena menawarkan spesifikasi performa tinggi yang mendekati seri utamanya (Xiaomi 14) namun dengan beberapa penyesuaian untuk menekan harga.',
+      price: 1250000,
+      imageUrl: 'assets/images/xiaomi-14t.jpeg',
+    ),
+    Product(
+      id: 'p2',
       name: 'Smartwatch MI',
       description:
           'Smartwatch dengan desain yang modern. Tahan air hingga 50m dan strap terbuat dari plastik.',
