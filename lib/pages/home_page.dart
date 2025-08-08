@@ -21,7 +21,7 @@ class _HomePageContentState extends State<HomePageContent> {
       description:
           'Sepatu lari yang sangat ringan dan nyaman, dibuat dengan teknologi bantalan terbaru.',
       price: 750000,
-      imageUrl: 'assets/images/sepatu-nike.jpeg',
+      imageUrl: 'assets/images/Nike.jpeg',
     ),
     Product(
       id: 'p2',
@@ -29,7 +29,7 @@ class _HomePageContentState extends State<HomePageContent> {
       description:
           'Jam tangan analog dengan desain klasik yang elegan. Tahan air hingga 50m dan strap terbuat dari kulit asli.',
       price: 1250000,
-      imageUrl: 'assets/images/jam-tangan-klasik.jpeg',
+      imageUrl: 'assets/images/Smartwatch.jpeg',
     ),
     // Tambahkan produk lain di sini jika perlu
   ];
