@@ -37,7 +37,7 @@ class Bab3 extends StatelessWidget {
                 const SizedBox(height: 20),
                 // 2b. Nama Lengkap: Widget Text untuk menampilkan nama.
                 const Text(
-                  'Ghifari',
+                  'Yogyakarta',
                   style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
