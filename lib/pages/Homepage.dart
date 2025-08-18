@@ -38,6 +38,8 @@ class MyApp extends StatelessWidget {
         'Bab2': (context) => const PlaceholderScreen(chapter: 'Bab 2'),
         'Bab3': (context) => const PlaceholderScreen(chapter: 'Bab 3'),
         'Bab4': (context) => const PlaceholderScreen(chapter: 'Bab 4'),
+        'Bab5': (context) => const PlaceholderScreen(chapter: 'Bab 5'),
+        'Bab6': (context) => const PlaceholderScreen(chapter: 'Bab 6'),
       },
     );
   }
@@ -51,7 +53,8 @@ class Homepage extends StatefulWidget {
   State<Homepage> createState() => _HomepageState();
 }
 
-class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin {
+class _HomepageState extends State<Homepage>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _fadeAnimation;
   late Animation<double> _scaleAnimation;
@@ -67,12 +70,18 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
     );
 
     // Kurva animasi untuk memberikan efek 'mental' saat muncul
-    final curve = CurvedAnimation(parent: _controller, curve: Curves.easeOutBack);
+    final curve = CurvedAnimation(
+      parent: _controller,
+      curve: Curves.easeOutBack,
+    );
 
     // Kombinasi 3 animasi untuk 1 kontainer
     _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(curve);
     _scaleAnimation = Tween<double>(begin: 0.7, end: 1.0).animate(curve);
-    _slideAnimation = Tween<Offset>(begin: const Offset(0, 0.5), end: Offset.zero).animate(curve);
+    _slideAnimation = Tween<Offset>(
+      begin: const Offset(0, 0.5),
+      end: Offset.zero,
+    ).animate(curve);
 
     // Mulai animasi
     _controller.forward();
@@ -91,10 +100,7 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
         backgroundColor: Colors.indigo,
         title: const Text(
           'Belajar Flutter - Menu Utama',
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
       // Gunakan Container untuk menambahkan latar belakang gradasi
@@ -121,15 +127,21 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
                 scale: _scaleAnimation,
                 // 1. Semua elemen UI sekarang ada di dalam satu kontainer
                 child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 32,
+                  ),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.25), // Latar belakang semi-transparan
+                    color: Colors.black.withOpacity(
+                      0.25,
+                    ), // Latar belakang semi-transparan
                     borderRadius: BorderRadius.circular(20), // Sudut membulat
                     border: Border.all(color: Colors.white.withOpacity(0.2)),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min, // Agar kontainer tidak memenuhi layar
+                    mainAxisSize:
+                        MainAxisSize.min, // Agar kontainer tidak memenuhi layar
                     children: [
                       const Text(
                         'Pilih Latihan:',
@@ -159,6 +171,16 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
                         onPressed: () => Navigator.pushNamed(context, 'Bab4'),
                         child: const Text('Latihan Bab 4 - Kalkulator'),
                       ),
+                      const SizedBox(height: 16),
+                      ElevatedButton(
+                        onPressed: () => Navigator.pushNamed(context, 'Bab5'),
+                        child: const Text('Latihan Bab 5 - Todo List'),
+                      ),
+                      const SizedBox(height: 16),
+                      ElevatedButton(
+                        onPressed: () => Navigator.pushNamed(context, 'Bab6'),
+                        child: const Text('Latihan Bab 6 - Photo Viewer'),
+                      ),
                     ],
                   ),
                 ),
@@ -170,7 +192,6 @@ class _HomepageState extends State<Homepage> with SingleTickerProviderStateMixin
     );
   }
 }
-
 
 // Halaman Placeholder untuk tujuan navigasi
 class PlaceholderScreen extends StatelessWidget {

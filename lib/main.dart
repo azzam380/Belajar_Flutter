@@ -9,6 +9,8 @@ import 'package:belajar_flutter/pages/Bab1.dart';
 import 'package:belajar_flutter/pages/Bab2.dart';
 import 'package:belajar_flutter/pages/Bab3.dart';
 import 'package:belajar_flutter/pages/Bab4.dart';
+import 'package:belajar_flutter/pages/Bab5.dart';
+import 'package:belajar_flutter/pages/Bab6.dart';
 
 void main() {
   runApp(
@@ -51,6 +53,8 @@ class MyApp extends StatelessWidget {
         'Bab2': (context) => const Bab2(),
         'Bab3': (context) => const Bab3(),
         'Bab4': (context) => const Bab4(),
+        'Bab5': (context) => const Bab5(),
+        'Bab6': (context) => const Bab6(),
       },
     );
   }
