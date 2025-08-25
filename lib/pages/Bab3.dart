@@ -10,8 +10,16 @@ class Bab3 extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blueGrey[50], // Warna latar belakang halaman
       appBar: AppBar(
-        title: const Text('My Profile Card', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.blueGrey[800],
+        title: const Text(
+          'My Profile Card',
+          style: TextStyle(color: Colors.white),
+        ),
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       // 5. Center: Memastikan semua elemen berada di tengah layar.
       body: Center(

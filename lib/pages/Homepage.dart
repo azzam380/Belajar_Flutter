@@ -40,6 +40,10 @@ class MyApp extends StatelessWidget {
         'Bab4': (context) => const PlaceholderScreen(chapter: 'Bab 4'),
         'Bab5': (context) => const PlaceholderScreen(chapter: 'Bab 5'),
         'Bab6': (context) => const PlaceholderScreen(chapter: 'Bab 6'),
+        'Bab7': (context) => const PlaceholderScreen(chapter: 'Bab 7'),
+        'Bab8': (context) => const PlaceholderScreen(chapter: 'Bab 8'),
+        'Bab9': (context) => const PlaceholderScreen(chapter: 'Bab 9'),
+        'Bab10': (context) => const PlaceholderScreen(chapter: 'Bab 10'),
       },
     );
   }
@@ -98,6 +102,7 @@ class _HomepageState extends State<Homepage>
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
+        centerTitle: true,
         title: const Text(
           'Belajar Flutter - Menu Utama',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
@@ -180,6 +185,26 @@ class _HomepageState extends State<Homepage>
                       ElevatedButton(
                         onPressed: () => Navigator.pushNamed(context, 'Bab6'),
                         child: const Text('Latihan Bab 6 - Photo Viewer'),
+                      ),
+                      const SizedBox(height: 16),
+                      ElevatedButton(
+                        onPressed: () => Navigator.pushNamed(context, 'Bab7'),
+                        child: const Text('Latihan Bab 7 - Fetch API'),
+                      ),
+                      const SizedBox(height: 16),
+                      ElevatedButton(
+                        onPressed: () => Navigator.pushNamed(context, 'Bab8'),
+                        child: const Text('Latihan Bab 8 - Catatan'),
+                      ),
+                      const SizedBox(height: 16),
+                      ElevatedButton(
+                        onPressed: () => Navigator.pushNamed(context, 'Bab9'),
+                        child: const Text('Latihan Bab 9 - Management'),
+                      ),
+                      const SizedBox(height: 16),
+                      ElevatedButton(
+                        onPressed: () => Navigator.pushNamed(context, 'Bab10'),
+                        child: const Text('Latihan Bab 10 - UI Kompleks'),
                       ),
                     ],
                   ),

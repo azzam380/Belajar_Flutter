@@ -50,8 +50,13 @@ class Bab5 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bab 5: Navigasi & Routing'),
+        backgroundColor: Colors.blueAccent[700],
+        title: const Text('Bab 5: Navigasi & Routing',  style: TextStyle(color: Colors.white)),
         centerTitle: true,
+                leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       body: ListView.builder(
         itemCount: products.length,

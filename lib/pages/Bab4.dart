@@ -23,6 +23,7 @@ class Bab4 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.indigo,
         title: const Text('Latihan Bab 4 - Calculator', style: TextStyle(color: Colors.white)),
+        centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),

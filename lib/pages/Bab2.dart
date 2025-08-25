@@ -16,7 +16,15 @@ class Bab2 extends StatelessWidget {
       appBar: AppBar(
         // Mengubah warna latar belakang AppBar sesuai permintaan latihan.
         backgroundColor: Colors.teal[700],
-        title: const Text('Latihan Bab 2 - Biodata App', style: TextStyle(color: Colors.white)),
+        title: const Text(
+          'Latihan Bab 2 - Biodata App',
+          style: TextStyle(color: Colors.white),
+        ),
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       // Body dari Scaffold, kita gunakan Center untuk menempatkan konten di tengah.
       body: const Center(
